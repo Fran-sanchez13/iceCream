@@ -1,0 +1,44 @@
+body{
+    background-color: #f9eaea;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iceLogo{
+    width: 150px;
+  height: 150px;
+}
+
+#nosotros{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#nosotros h1{
+    color: #f9eaea;
+    margin-top: 120px;
+    font-size: 80px;
+    font-family: 'quicksand';
+    background-color: #804040;
+    padding: 15px;
+    border-radius: 1rem;
+    margin: 20px;
+}
+  
+#nosotros p{
+    color:#f9eaea;
+    font-family: 'fredoka';
+    font-size: 20px;
+    width: 60%;
+    background-color: #804040;
+    border-radius: 1rem;
+    padding: 15px;
+    margin-bottom: 50px;
+}

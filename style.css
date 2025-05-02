@@ -1,0 +1,178 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  scrollbar-width: none;
+  background-color: var(--primary);
+}
+html, body{
+  height: 100%;
+  overflow-x: hidden;
+}
+:root{
+    --primary: #f9eaea;
+    --lettering: #804040;
+    --secondary: #0D2D4D;
+
+}
+
+.iceLogo{
+  width: 60px;
+  height: 60px;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary);
+  height: 40px;
+  z-index: 5;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navList, .navCakes{
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a{
+  color: #804040;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: 'quicksand';
+}
+
+.cartIcon{
+  height: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#cartToggle{
+  display: none;
+}
+
+#hero{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary);
+  height: 100%;
+}
+
+
+.title{
+  color: var(--lettering);
+  font-size: 80px;
+  font-family: 'quicksand';
+}
+
+.btnSection{
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  height: 40px;
+  border-radius: 1rem;
+  background-color: var(--lettering);
+  font-family: 'fredoka';
+}
+
+.imgPortada, .imgCakes {
+  max-height: 100vh; 
+  width: auto;
+  object-fit: contain;
+}
+
+
+#batidos, #helados{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary);
+  
+}
+
+#nosotros{
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#nosotros h1{
+  margin-top: 120px;
+  font-size: 40px;
+  font-family: 'quicksand';
+  background-color: var(--lettering);
+  padding: 15px;
+  border-radius: 1rem;
+  margin: 20px;
+}
+
+#nosotros a{
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.navCakes a{
+  font-size: 40px;
+  background-color: var(--lettering);
+  color: var(--primary);
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+#productos{
+  background-color: var(--primary);
+}
+
+#productos h1{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: var(--lettering);
+  font-family: 'quicksand';
+}
+
+.cakes{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.imgCakes{
+  max-height: 70vh;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  padding: 20px;
+}
+
+.ingredientsList{
+  font-size: 20px;
+  font-family: 'quicksand' ;
+}
+
