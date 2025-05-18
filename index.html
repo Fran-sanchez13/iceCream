@@ -26,13 +26,28 @@
         </ul>
       </nav>
       <!-- CARRITO -->
-      <label for="cart-toggle">
+      <label for="cartToggle">
         <img src="assets/img/ordenar-comida (1).png" alt="Ordenar comida" class="cartIcon">
       </label>
       <input type="checkbox" id="cartToggle">
       <div class="cart">
         <h2>Tus tortas</h2>
         <!-- productos en el carrito -->
+        <div class="cart-item">
+          <img src="assets/img/rogel.jpg" alt="rogel">
+          <div class="item-info">
+            <h3 class="item-title">Rogel</h3>
+            <p class="item-bid">Precio:</p>
+            <span class="item-price">$3.000</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+
+          </div>
+        </div>
+
         <div class="cart-item">
           <img src="assets/img/rogel.jpg" alt="rogel">
           <div class="item-info">
@@ -86,26 +101,34 @@
           <p>Total:</p>
           <span>$3.000</span>
          </div>
-
-
-        <!-- comprar btn -->
+         <!-- comprar btn -->
          <button class="btn-add">Comprar</button>
-      </div>
+        </div>     
 </header>
 <!-- PRIMERA SECTION -->
 <main>
   
   <section id="hero">
-    <div>
-      <h1 class="title">TORTAS</h1>
-      <a href="#productos" class="btnSection">Ver productos</a>
+    <div class="cartContainer">
+      <h1 class="title">tortas</h1>
+      <img src="assets/img/torta de cerezas.png" alt="torta de cerezas" class="imgPortada">
+      <button class="btnSection">Ver productos</button>
     </div>
-    <img src="assets/img/torta de cerezas.png" alt="tortas de cerezas" class="imgPortada">
+
+    <div class="cartContainer">
+      <h1 class="title">tortas</h1>
+      <img src="assets/img/torta de cerezas.png" alt="torta de cerezas" class="imgPortada">
+      <button class="btnSection">Ver productos</button>
+    </div>
+    
+    <div class="cartContainer">
+      <h1 class="title">tortas</h1>
+      <img src="assets/img/torta de cerezas.png" alt="torta de cerezas" class="imgPortada">
+      <button class="btnSection">Ver productos</button>
+    </div>
   </section>
-  
-  <section id="nosotros">
-    <h1><a href="aboutUs.html">Nuestra Historia</a></h1>
-  </section>
+  <!-- hay un btn section, agregalo ahi 
+   tambien img portada y title-->
   
 <section id="productos">
   <h1>Torta Matilda</h1>
@@ -209,6 +232,6 @@
 <footer>
   
 </footer>
-
+<!-- <script src="scripts.js"></script> -->
 </body>
 </html>
