@@ -187,11 +187,12 @@ nav a{
   margin-top: 80px;
   padding: 40px;
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
+  justify-content: center; 
   align-items: flex-start;
-  gap: 40px; /* Espacio entre las cards */
-  flex-wrap: wrap; /* Para responsividad */
+  gap: 40px; 
+  flex-wrap: wrap; 
   background-color: var(--primary);
+  padding-bottom: 15%;
 }
 
 .cartContainer {
@@ -199,6 +200,7 @@ nav a{
   border-radius: 1rem;
   padding: 20px;
   width: 250px;
+  height: 300px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -221,19 +223,18 @@ nav a{
   border-radius: 0.5rem;
   font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.btnSection:hover {
-  background-color: #093963;
+.btnSection a{
+  text-decoration: none;
+  color: var(--lettering);
 }
-
 
 .imgPortada {
   display: block;
   margin: 0 auto;
   width: 150px;
-  height: auto;
+  height: 150px;
 }
 
 
@@ -283,11 +284,11 @@ nav a{
   border-radius: 1rem;
 }
 
-#productos{
+#productsCakes{
   background-color: var(--primary);
 }
 
-#productos h1{
+#productsCakes h1{
   margin-top: 30px;
   margin-bottom: 15px;
   display: flex;
@@ -314,5 +315,15 @@ nav a{
 .ingredientsList{
   font-size: 20px;
   font-family: 'quicksand' ;
+}
+
+
+.btnCart{
+  text-decoration: none;
+  color: var(--primary);
+  border: 1px solid var(--lettering);
+  border-radius: 8px;
+  background-color: var(--lettering);
+  padding: 10px;
 }
 
