@@ -245,14 +245,6 @@ nav a{
 }
 
 
-#batidos, #helados{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--primary);
-  
-}
-
 #nosotros{
   background-color: var(--primary);
   display: flex;
@@ -326,4 +318,47 @@ nav a{
   background-color: var(--lettering);
   padding: 10px;
 }
+/* =====SECTION CONTACT===== */
+
+#contact{
+  margin-top: 70px;
+}
+
+#contact h2{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 50px;
+color: var(--lettering);
+margin: 10px;
+padding: 20px;
+}
+
+
+.formContact{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.formContact p{
+  font-family: 'fredoka';
+  color: var(--secondary);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.formContact input{
+  height: 30px;
+  border: 2px solid var(--secondary);
+  border-radius: 1rem;
+  padding: 10px;
+  color: var(--secondary);
+  font-family: 'fredoka';
+  font-weight: 600;
+}
+
 
