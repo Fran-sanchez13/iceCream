@@ -16,6 +16,8 @@ html, body{
     --primary: #f9eaea;
     --lettering: #804040;
     --secondary: #0D2D4D;
+    --back1: #d6cfc9;
+    --back2: #e8d8d8;
 
 }
 
@@ -280,7 +282,13 @@ nav a{
   background-color: var(--primary);
 }
 
-#productsCakes h1{
+#productsCakes span{
+  padding: 5px;
+  border-radius: 1rem;
+  color: var(--primary);
+  background-color: var(--lettering);
+}
+#productsCakes h1, h2{
   margin-top: 30px;
   margin-bottom: 15px;
   display: flex;
@@ -318,6 +326,54 @@ nav a{
   background-color: var(--lettering);
   padding: 10px;
 }
+
+
+#productsBat h1, h2{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: var(--lettering);
+  font-family: 'quicksand';
+
+}
+
+#productsBat span{
+  color: var(--primary);
+  background-color: var(--lettering);
+  padding: 5px;
+  border-radius: 1rem;
+}
+
+#productsBat{
+  background-color: var(--primary);
+}
+
+#productsIce{
+  background-color: var(--primary);
+}
+
+#productsIce span{
+  color: var(--primary);
+  background-color: var(--lettering);
+  padding: 5px;
+  border-radius: 1rem;
+}
+
+#productsIce h1, h2{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: var(--lettering);
+  font-family: 'quicksand';
+}
+
+
 /* =====SECTION CONTACT===== */
 
 #contact{
