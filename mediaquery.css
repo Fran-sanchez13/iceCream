@@ -1,0 +1,18 @@
+/*======MEDIA QUERYS======*/
+
+@media (max-width: 993px){
+    .cartIcon{
+        height: 60px;
+    }
+    .cartContainer {
+        width: 200px;
+        height: 250px;
+    }
+
+    .ingredientsList p, li{
+        display: none;
+    }
+
+    
+
+}
