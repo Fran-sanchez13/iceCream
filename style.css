@@ -59,6 +59,12 @@ nav a{
   text-decoration: none;
   font-family: 'quicksand';
 }
+/* ==========MENU HAMBURGUESA=============== */
+
+.menu-label{
+  height: 30px;
+}
+
 /* ==========carrito=============== */
 .cartIcon{
   height: 30px;
@@ -67,7 +73,7 @@ nav a{
   margin: 10px;
 }
 
-#cartToggle{
+#cartToggle, #menu-toggle, .menu-label{
   display: none;
 }
 
@@ -288,6 +294,7 @@ nav a{
   color: var(--primary);
   background-color: var(--lettering);
 }
+
 #productsCakes h1, h2{
   margin-top: 30px;
   margin-bottom: 15px;
@@ -417,3 +424,18 @@ padding: 20px;
   font-weight: 600;
 }
 
+
+footer{
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lettering);
+  margin-top: 20px;
+}
+
+footer p{
+  color: var(--primary);
+  font-family: 'fredoka';
+  font-size: 20px;
+}

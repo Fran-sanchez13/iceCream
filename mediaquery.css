@@ -1,18 +1,71 @@
 /*======MEDIA QUERYS======*/
 
-@media (max-width: 993px){
-    .cartIcon{
-        height: 60px;
+
+/*====TABLETS===*/
+ @media (max-width: 992px){
+    .navList{
+        display: none;
+        position: absolute;
+        top: 65px;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--lettering);
+        border: 2px solid var(--back1);
+        border-top: 0;
+        border-radius: 0px 0px 15px 15px;
+        padding: 30px 5px;
+        z-index: 2;
+    } 
+
+    .menu-label{
+        display: flex;
+        cursor: pointer;
     }
-    .cartContainer {
+
+    #menu-toggle:checked + .navList{
+        display: flex;
+    }
+
+
+    .navList a{
+        color: var(--primary);
+    }
+    
+     #productsCakes h1{
+        margin-bottom: 0px;
+    } 
+
+
+     .cartContainer {
         width: 200px;
         height: 250px;
     }
 
-    .ingredientsList p, li{
+     .ingredientsList p{
         display: none;
+    } 
+    .ingredientsList li{
+        display: none;
+    } 
+
+    .cakes{
+        display: grid;
+        justify-content: center;
+    } 
+    
+     .ingredientsList a{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px; 
+        
     }
 
-    
+}
 
+@media (max-width: 768px){
+    .cartContainer {
+        width: 150px;
+        height: 230px;
+    }
 }
