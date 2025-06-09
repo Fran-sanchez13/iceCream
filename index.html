@@ -34,74 +34,15 @@
       <input type="checkbox" id="cartToggle">
       <div class="cart">
         <h2>Tus tortas</h2>
-        <!-- productos en el carrito -->
-        <div class="cart-item">
-          <img src="assets/img/rogel.jpg" alt="rogel">
-          <div class="item-info">
-            <h3 class="item-title">Rogel</h3>
-            <p class="item-bid">Precio:</p>
-            <span class="item-price">$3.000</span>
-          </div>
-          <div class="item-handler">
-            <span class="quantity-handler down">-</span>
-            <span class="item-quantity">1</span>
-            <span class="quantity-handler up">+</span>
-
-          </div>
-        </div>
-
-        <div class="cart-item">
-          <img src="assets/img/rogel.jpg" alt="rogel">
-          <div class="item-info">
-            <h3 class="item-title">Rogel</h3>
-            <p class="item-bid">Precio:</p>
-            <span class="item-price">$3.000</span>
-          </div>
-          <div class="item-handler">
-            <span class="quantity-handler down">-</span>
-            <span class="item-quantity">1</span>
-            <span class="quantity-handler up">+</span>
-
-          </div>
-        </div>
-
-        <div class="cart-item">
-          <img src="assets/img/rogel.jpg" alt="rogel">
-          <div class="item-info">
-            <h3 class="item-title">Rogel</h3>
-            <p class="item-bid">Precio:</p>
-            <span class="item-price">$3.000</span>
-          </div>
-          <div class="item-handler">
-            <span class="quantity-handler down">-</span>
-            <span class="item-quantity">1</span>
-            <span class="quantity-handler up">+</span>
-
-          </div>
-        </div>
-
-        <div class="cart-item">
-          <img src="assets/img/rogel.jpg" alt="rogel">
-          <div class="item-info">
-            <h3 class="item-title">Rogel</h3>
-            <p class="item-bid">Precio:</p>
-            <span class="item-price">$3.000</span>
-          </div>
-          <div class="item-handler">
-            <span class="quantity-handler down">-</span>
-            <span class="item-quantity">1</span>
-            <span class="quantity-handler up">+</span>
-
-          </div>
-        </div>
-        
+        <div class="cart-items"></div>
+      
         <!-- divider -->
         <span class="divider"></span>
 
         <!-- total -->
          <div class="cart-total">
           <p>Total:</p>
-          <span>$3.000</span>
+          <span id="total-price"></span>
          </div>
          <!-- comprar btn -->
          <button class="btn-add">Comprar</button>
@@ -131,224 +72,20 @@
     </div>
   </section>
   
-<section id="productsCakes">
-  <h1><span>TORTAS!</span></h1>
-  <h2>Torta Matilda</h2>
-    <div class="cakes">
-      <div class="ingredientsList">
-
-        <p>🍰 Esta famosa torta de la iconica pelicula <span>Matilda</span>  (1996)</p>
-        <br>
-        <li>Bizcochuelo de chocolate húmedo (doble capa)</li>
-        <br>
-        <li>Ganache de chocolate negro suave y brillante (cobertura y relleno)</li>
-        <br>
-        <li>Cacao amargo para un sabor profundo</li>
-        <br>
-        <li>Toques de café o esencia de vainilla para realzar el sabor</li>
-        <br>
-        <br>
-        <a href="#" class="btnCart">Comprar</a>
-
-      </div>
-      <img src="assets/img/torta matilda.jpg" alt="torta de matilda" class="imgCakes">
-    </div>
-      
-</section>
-<section id="productsCakes">
-  <h1>Torta Red Velvet</h1>
-  <div class="cakes">
-    <div class="ingredientsList">
-
-      <p>🍰 Una torta de color rojo intenso, suave y con un sabor único a cacao y vainilla. Se compone de:</p>
-      <br>
-      <li>Bizcochuelo rojo aterciopelado con un toque de cacao</li>
-      <br>
-      <li>Buttermilk (leche cortada) que le da humedad y suavidad </li>
-      <br>
-      <li>Relleno y cobertura de crema de queso (cream cheese frosting)</li>
-      <br>
-      <li>Un leve toque ácido que equilibra lo dulce</li>
-      <br>
-      <br>
-      <a href="#" class="btnCart">Comprar</a>
-
-    </div>
-    <img src="assets/img/RedVelvet.jpg" alt="torta de matilda" class="imgCakes">
-  </div>
-    
-</section>
-
-<section id="productsCakes">
-  <h1>Torta Marquise</h1>
-  <div class="cakes">
-    <div class="ingredientsList">
-
-      <p>🍰Una torta chocolatera, cremosa y sin harinas, ideal para quienes aman los postres intensos. Sus componentes son</p>
-      <br>
-      <li>Base cremosa de chocolate semi amargo (a base de manteca, azúcar, huevos y chocolate derretido)</li>
-      <br>
-      <li>Sin harina, lo que le da una textura densa y sedosa</li>
-      <br>
-      <li>Puede llevar una base crocante de galletitas o frutos secos</li>
-      <br>
-      <li>Cobertura de ganache o baño espejo de chocolate</li>
-      <br>
-      <br>
-      <a href="#" class="btnCart">Comprar</a>
-
-    </div>
-    <img src="assets/img/rogel.jpg" alt="torta de matilda" class="imgCakes">
-  </div>
-    
-</section>
-
-<section id="productsCakes">
-  <h1>Torta Rogel</h1>
-  <div class="cakes">
-    <div class="ingredientsList">
-
-      <p>🍰 Un clásico argentino, finísimo y crocante, lleno de capas y dulce de leche. Está compuesta por:</p>
-      <br>
-      <li>Varias capas finas de masa crocante tipo hojaldre</li>
-      <br>
-      <li>Relleno abundante de dulce de leche tradicional</li>
-      <br>
-      <li>Cobertura de merengue italiano bien dorado por fuera y suave por dentro</li>
-      <br>
-      <li>A veces se le agrega un toque de licor o esencia para perfumar</li>
-      <br>
-      <br>
-      <a href="#" class="btnCart">Comprar</a>
-
-    </div>
-    <img src="assets/img/marquise.jpg" alt="torta de matilda" class="imgCakes">
-  </div>
-    
-</section>
+<section id="productsCakes"><h1><span>TORTAS!</span></h1></section>
+<section id="productsCakes"><h1>Torta Red Velvet</h1></section>
+<section id="productsCakes"><h1>Torta Marquise</h1></section>
+<section id="productsCakes"><h1>Torta Rogel</h1></section>
 <br>
 <br>
 <br>
 <br>
 <!-------BATIDOS--------->
 <section id="productsBat">
-  <h1><span>BATIDOS!</span></h1>
-  <h2>Batido de frutilla</h2>
-    <div class="cakes">
-      <div class="ingredientsList">
-
-        <p> 🥤Este famoso batido de frutilla contiene frutillas frescas</p>
-        <br>
-        <li>leche (puede ser de vaca o vegetal como almendra, soja, avena)</li>
-        <br>
-        <li>Azúcar, miel, stevia u otro endulzante</li>
-        <br>
-        <li>Hielo (si se desea frío)</li>
-        <br>
-        <br>
-        <a href="#" class="btnCart">Comprar</a>
-
-      </div>
-      <img src="assets/img/batido-Frutilla.jpg" alt="torta de matilda" class="imgCakes">
-    </div>
-      
-    <h2>Batido de Kiwi</h2>
-    <div class="cakes">
-      <div class="ingredientsList">
-
-        <p>🥤 Este famoso batido de Kiwi contienen Kiwis frescos</p>
-        <br>
-        <li>leche (puede ser vegetal)</li>
-        <br>
-        <li>Azúcar, miel, stevia u otro endulzante</li>
-        <br>
-        <li>Hielo (si se desea frío)</li>
-        <br>
-        <br>
-        <a href="#" class="btnCart">Comprar</a>
-
-      </div>
-      <img src="assets/img/batido-Kiwi.jpg" alt="torta de matilda" class="imgCakes">
-    </div>
-
-    <h2>Batido de Durazno</h2>
-    <div class="cakes">
-      <div class="ingredientsList">
-
-        <p>🥤 Este famoso batido de durazno contiene duraznos frescos</p>
-        <br>
-        <li>leche</li>
-        <br>
-        <li>Azúcar, stevia u otro endulzante</li>
-        <br>
-        <li>Hielo (si se desea frío)</li>
-        <br>
-        <br>
-        <a href="#" class="btnCart">Comprar</a>
-
-      </div>
-      <img src="assets/img/batido-Durazno.jpg" alt="torta de matilda" class="imgCakes">
-    </div>
-</section>
+  <h1><span>BATIDOS!</span></h1></section>
 <!-----HELADOS------>
 <section id="productsIce">
-  <h1><span>HELADOS!</span></h1>
-  <h2>Helado de vainilla a la crema</h2>
-  <div class="cakes">
-    <div class="ingredientsList">
-      <p>🍦 Cremoso y con un sabor auténtico a vainilla</p>
-      <br>
-      <li>Base de leche y crema</li>
-      <br>
-      <li>Toques de vainilla</li>
-      <br><br>
-      <a href="#" class="btnCart">Comprar</a>
-    </div>
-    <img src="assets/img/helado-Vainilla.jpg" alt="helado de frutilla" class="imgCakes">
-  </div>
-
-   <h2>Helado de chocolate</h2>
-  <div class="cakes">
-    <div class="ingredientsList">
-      <p>🍦 Cremoso y con un sabor auténtico a chocolate</p>
-      <br>
-      <li>Base de leche y crema</li>
-      <br>
-      <li>Con chips de chocolate</li>
-      <br><br>
-      <a href="#" class="btnCart">Comprar</a>
-    </div>
-    <img src="assets/img/helado-Chocolate.jpg" alt="helado de frutilla" class="imgCakes">
-  </div>
-
-  <h2>Helado de Cafe</h2>
-  <div class="cakes">
-    <div class="ingredientsList">
-      <p>🍦 Cremoso y con un sabor auténtico a cafe</p>
-      <br>
-      <li>Base de leche y crema</li>
-      <br>
-      <li>Con Cafe</li>
-      <br><br>
-      <a href="#" class="btnCart">Comprar</a>
-    </div>
-    <img src="assets/img/helado-Cafe.jpg" alt="helado de frutilla" class="imgCakes">
-  </div>
-
-   <h2>Helado de Coco</h2>
-  <div class="cakes">
-    <div class="ingredientsList">
-      <p>🍦 Cremoso y con un sabor auténtico a coco</p>
-      <br>
-      <li>Base de leche y crema</li>
-      <br>
-      <li>Con pedasitos de coco</li>
-      <br><br>
-      <a href="#" class="btnCart">Comprar</a>
-    </div>
-    <img src="assets/img/helado-Coco.jpg" alt="helado de frutilla" class="imgCakes">
-  </div>
-</section>
+  <h1><span>HELADOS!</span></h1></section>
 </main>
 
 

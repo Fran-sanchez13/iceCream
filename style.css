@@ -145,11 +145,13 @@ nav a{
 }
 
 .down{
+  cursor: pointer;
   background-color: var(--primary);
   color: var(--secondary);
 }
 
 .up{
+  cursor: pointer;
   background-color: var(--primary);
   color: var(--secondary);
 }
@@ -334,6 +336,21 @@ nav a{
   padding: 10px;
 }
 
+.clear-cart{
+  font-family: 'fredoka';
+  color: var(--primary);
+  background-color: var(--secondary);
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.clear-cart:hover{
+  background-color: var(--primary);
+  color: var(--secondary);
+}
 
 #productsBat h1, h2{
   margin-top: 30px;
