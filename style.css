@@ -18,6 +18,7 @@ html, body{
     --secondary: #0D2D4D;
     --back1: #d6cfc9;
     --back2: #e8d8d8;
+    --back3:#d39c9c;
 
 }
 
@@ -254,7 +255,39 @@ nav a{
   object-fit: contain;
 }
 
+.cardInfo{
+  border-radius: 1rem;
+  background-color: var(--back3);
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  height: 250px;
+}
 
+.imgCardsInfo{
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+}
+
+.titleInfo{
+  color: var(--lettering);
+  font-size: 30px;
+}
+
+#cakes, 
+#smoothies,
+#iceCream{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* section nosotros */
 #nosotros{
   background-color: var(--primary);
   display: flex;
