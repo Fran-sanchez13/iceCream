@@ -74,6 +74,8 @@ const iceCream = [
     }
 ];
 
+let carrito = [];
+
 function renderProducts(lista, containerId) {
     const container = document.getElementById(containerId);
     lista.forEach(product => {
@@ -85,6 +87,21 @@ function renderProducts(lista, containerId) {
           </div>
         `;
     });
+    const botons = container.querySelectorAll(".btnSection");
+    botons.forEach(boton => {
+        boton.addEventListener("click", () => {
+            const nameProduct = boton.getAttribute("data-nombre");
+            const product = lista.find(p => p.nombre === nameProduct);
+            agregarAlCarrito(product);
+        });
+    });
+}
+
+
+function agregarAlCarrito(product){
+    carrito.push(product);
+    console.log("Carrito:", carrito);
+    
 }
 
 renderProducts(cakes, "cakes");
