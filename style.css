@@ -205,7 +205,6 @@ nav a{
   background-color: var(--primary);
   padding-bottom: 15%;
 }
-
 .cartContainer {
   background-color: var(--lettering);
   border-radius: 1rem;
@@ -214,6 +213,42 @@ nav a{
   height: 300px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 200ms;
+}
+.cartContainer:hover {
+  translate: 0 -10px;
+  box-shadow: 0 0px 12px rgb(26, 26, 26);
+}
+
+#product-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: auto;
+  justify-content: center;
+}
+.cardProduct {
+  max-width: 300px;
+  text-align: center;
+  background-color: var(--lettering);
+  padding: 20px;
+  gap: 20px;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.228);
+  transition: 200ms;
+}
+
+.cardProduct:hover {
+  translate: 0 -10px;
+  box-shadow: 0 0 5px rgb(7, 5, 5);
+}
+
+.price{
+  color: var(--lettering);
+  background-color: var(--primary);
+  padding:5px;
+  margin:5px;
+  border-radius:10px;
 }
 
 .title {
@@ -274,7 +309,7 @@ nav a{
 }
 
 .titleInfo{
-  color: var(--lettering);
+  color: var(--primary);
   font-size: 30px;
 }
 

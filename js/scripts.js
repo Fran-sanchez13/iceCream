@@ -8,10 +8,11 @@ function createProductStart (productos) {
         newProduct.innerHTML = `
         <h3 class="titleInfo">${producto.nombre}</h3>
         <img class="imgCardsInfo" src="./assets/img/${producto.id}.jpg">
-        <p>$${producto.precio}</p>
+        <p class="price">$${producto.precio}</p>
         <button class="btnSection">Comprar</button>
         `;
-        containerCards.appendChild(newProduct)
+        containerCards.appendChild(newProduct);
+        newProduct.querySelector('.btnSection').addEventListener('click', () => addCart(producto))
     });
 }
 
