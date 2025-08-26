@@ -2,25 +2,24 @@ function addCart(producto){
     const memoria = JSON.parse(localStorage.getItem("products"));
     console.log(memoria);
     if(!memoria){
-        const newProduct = getNewProductMemory(producto);
-        newProduct.cantidad = 1;
-        localStorage.setItem("products", JSON.stringify([newProduct]));
+        const nuevoProducto = getNewProductMemory(producto);
+        localStorage.setItem("products", JSON.stringify([nuevoProducto]));
     } else{
-        const startProduct = memoria.findIndex(producto => producto.id ==producto.id)
-        console.log(startProduct);
-        if(startProduct === -1){
-            const newMemoria = memoria;
-            newMemoria.push(getNewProductMemory(producto))
-            localStorage.setItem("products", JSON.stringify(newMemoria));
+        const indexProduct = memoria.findIndex(products => products.id === producto.id);
+        console.log(indexProduct);
+        const newMemory = memoria;
+        if(indexProduct === -1){
+            newMemory.push(getNewProductMemory(producto))
+        } else{
+            newMemory[indexProduct].cantidad ++;
         }
-        
+            localStorage.setItem("products", JSON.stringify(newMemory));
     }
-    
 }
 
-
+// toma el producto, le agrega 1 y lo devuelve
 function getNewProductMemory(producto){
-    const newPoduct = producto;
-    newPoduct.cantidad = 1;
-    return newPoduct;
+    const nuevoProducto = producto;
+    nuevoProducto.cantidad = 1;
+    return nuevoProducto;
 }

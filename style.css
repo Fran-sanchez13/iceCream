@@ -105,7 +105,7 @@ nav a{
   border-radius: 50%;
 }
 
-.cart-item{
+#cart-items{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -510,7 +510,7 @@ padding: 20px;
 }
 
 
-footer{
+#footer{
   height: 10%;
   display: flex;
   justify-content: center;
@@ -519,7 +519,7 @@ footer{
   margin-top: 20px;
 }
 
-footer p{
+#footer p{
   color: var(--primary);
   font-family: 'fredoka';
   font-size: 20px;

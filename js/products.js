@@ -1,6 +1,7 @@
 //arrays
 
 const products = [
+    //TORTAS
     {
         id:1,
         nombre: "Torta Red Velvet",
@@ -30,6 +31,22 @@ const products = [
         precio: 2000,
     },
     {
+        id: 15,
+        nombre: "Torta Selva Negra",
+        imagen: "assets/img/15.jpg",
+        alt: "Torta Selva Negra",
+        precio: 3500,
+    },
+    {
+        id: 16,
+        nombre: "Torta Cheesecake",
+        imagen: "assets/img/torta-cheesecake.jpg",
+        alt: "Torta Cheesecake",
+        precio: 4000,
+    },
+    
+    //BATIDOS
+    {
         id:5,
         nombre: "Batido durazno",
         imagen: "assets/img/batido-Durazno.jpg",
@@ -57,6 +74,22 @@ const products = [
         alt: "Batido de sandia",
         precio: 2300,
     },
+    {
+        id: 17,
+        nombre: "Batido de banana",
+        imagen: "assets/img/batido-banana.jpg",
+        alt: "Batido de banana",
+        precio: 2200,
+    },
+    {
+        id: 18,
+        nombre: "Batido de mango",
+        imagen: "assets/img/batido-mango.jpg",
+        alt: "Batido de mango",
+        precio: 2400,
+    },
+
+    //HELADOS
     {
         id:9,
         nombre: "Helado de Cafe",
@@ -95,38 +128,11 @@ const products = [
     },
     {
         id: 14,
-        nombre: "Torta Selva Negra",
-        imagen: "assets/img/torta-selva-negra.jpg",
-        alt: "Torta Selva Negra",
-        precio: 3500,
-    },
-    {
-        id: 15,
-        nombre: "Batido de banana",
-        imagen: "assets/img/batido-banana.jpg",
-        alt: "Batido de banana",
-        precio: 2200,
-    },
-    {
-        id: 16,
         nombre: "Helado de limón",
         imagen: "assets/img/helado-limon.jpg",
         alt: "Helado de limón",
         precio: 1900,
     },
-    {
-        id: 17,
-        nombre: "Torta Cheesecake",
-        imagen: "assets/img/torta-cheesecake.jpg",
-        alt: "Torta Cheesecake",
-        precio: 4000,
-    },
-    {
-        id: 18,
-        nombre: "Batido de mango",
-        imagen: "assets/img/batido-mango.jpg",
-        alt: "Batido de mango",
-        precio: 2400,
-    }
+    
 
 ];
