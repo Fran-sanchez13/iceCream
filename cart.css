@@ -1,0 +1,62 @@
+#product-container{
+    padding-top: 10%;
+    width: 600px;
+    margin: auto;
+    width: 100%;
+}
+
+
+.cardProduct{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    transition: none;
+    align-items: center;
+}
+
+.cardProduct:hover{
+    translate: 0;
+}
+
+
+.cardProduct img{
+    height: 100px;
+    aspect-ratio: 1.5;
+}
+
+.title{
+    font-size: 20px;
+    
+}
+
+.price{
+    background-color: #804040;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+
+#totales{
+    text-align: center;
+}
+
+
+.btn{
+    background-color: #804040;
+    border: 2px solid #804040;
+    padding: 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: #f9eaea;
+}
+
+#totales p{
+    padding: 10px;
+    color: #804040;
+    font-family: 'quicksand';
+    font-weight: 800;
+}
+

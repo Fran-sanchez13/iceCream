@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="aboutUs.html">
     <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="cart.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    
     <title>CARRITO</title>
 </head>
 <body>
@@ -29,11 +31,17 @@
       </nav>
       <!-- CARRITO -->
       <label for="cartToggle">
-        <a href="cart.html"><img src="assets/img/ordenar-comida (1).png" alt="Ordenar comida" class="cartIcon"></a>
+        <a href="index.html"><img src="assets/img/back.png" alt="Ordenar comida" class="cartIcon"></a>
       </label>
 </header>
 <main>
-   <section id="product-container"></section>  
+<section id="product-container"></section>  
+<section id="totales">
+  <p>Total unidades: <span id="unidades">0</span></p>
+  <p>Total precio: $ <span id="unidades">0</span></p>
+  <button class="btn" disabled>Comprar</button>
+  <button class="btn">Borrar carrito</button>
+</section>
 </main>
 <footer></footer>
 <script src="./js/cart.js" defer></script>

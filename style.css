@@ -221,6 +221,7 @@ nav a{
 }
 
 #product-container{
+  max-width: 800px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -228,7 +229,7 @@ nav a{
   justify-content: center;
 }
 .cardProduct {
-  max-width: 300px;
+  max-width: 100%;
   text-align: center;
   background-color: var(--lettering);
   padding: 20px;
@@ -346,26 +347,9 @@ nav a{
   color: var(--primary);
 }
 
-.navCakes a{
-  font-size: 40px;
-  background-color: var(--lettering);
-  color: var(--primary);
-  padding: 10px;
-  border-radius: 1rem;
-}
 
-#productsCakes{
-  background-color: var(--primary);
-}
 
-#productsCakes span{
-  padding: 5px;
-  border-radius: 1rem;
-  color: var(--primary);
-  background-color: var(--lettering);
-}
-
-#productsCakes h1, h2{
+.titleH2{
   margin-top: 30px;
   margin-bottom: 15px;
   display: flex;
@@ -376,94 +360,6 @@ nav a{
   font-family: 'quicksand';
 }
 
-.cakes{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.imgCakes{
-  max-height: 70vh;
-  border-radius: 50%;
-  background-color: var(--secondary);
-  padding: 20px;
-}
-
-.ingredientsList{
-  font-size: 20px;
-  font-family: 'quicksand' ;
-}
-
-
-.btnCart{
-  text-decoration: none;
-  color: var(--primary);
-  border: 1px solid var(--lettering);
-  border-radius: 8px;
-  background-color: var(--lettering);
-  padding: 10px;
-}
-
-.clear-cart{
-  font-family: 'fredoka';
-  color: var(--primary);
-  background-color: var(--secondary);
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid var(--primary);
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.clear-cart:hover{
-  background-color: var(--primary);
-  color: var(--secondary);
-}
-
-#productsBat h1, h2{
-  margin-top: 30px;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  color: var(--lettering);
-  font-family: 'quicksand';
-
-}
-
-#productsBat span{
-  color: var(--primary);
-  background-color: var(--lettering);
-  padding: 5px;
-  border-radius: 1rem;
-}
-
-#productsBat{
-  background-color: var(--primary);
-}
-
-#productsIce{
-  background-color: var(--primary);
-}
-
-#productsIce span{
-  color: var(--primary);
-  background-color: var(--lettering);
-  padding: 5px;
-  border-radius: 1rem;
-}
-
-#productsIce h1, h2{
-  margin-top: 30px;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  color: var(--lettering);
-  font-family: 'quicksand';
-}
 
 
 /* =====SECTION CONTACT===== */
@@ -524,3 +420,4 @@ padding: 20px;
   font-family: 'fredoka';
   font-size: 20px;
 }
+
