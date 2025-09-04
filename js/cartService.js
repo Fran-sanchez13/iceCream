@@ -17,6 +17,19 @@ function addCart(producto){
     }
 }
 
+function restarCart(producto){
+    const memoria = JSON.parse(localStorage.getItem("products"));
+    const indexProduct = memoria.findIndex(products => products.id === producto.id);
+    if(memoria[indexProduct].cantidad > 1){
+        memoria[indexProduct].cantidad--;
+    }else{
+        memoria.splice(indexProduct,1);
+    }
+    localStorage.setItem("products", JSON.stringify(memoria));
+    createProductStart();
+
+}
+
 // toma el producto, le agrega 1 y lo devuelve
 function getNewProductMemory(producto){
     const nuevoProducto = producto;
