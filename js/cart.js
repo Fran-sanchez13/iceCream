@@ -1,4 +1,7 @@
 const containerCards = document.getElementById("product-container");
+const unidadesElement = document.getElementById("unidades");
+const priceElement = document.getElementById("precio");
+
 
 
 function createProductStart() {
@@ -16,7 +19,7 @@ function createProductStart() {
             <p class="price">$${producto.precio}</p>
             <div>
                 <button class="btnSection btnRestar">-</button>
-                <span class="cantidad">0</span>
+                <span class="cantidad">${producto.cantidad}</span>
                 <button class="btnSection btnSumar">+</button>
             </div>
             `;
@@ -25,12 +28,15 @@ function createProductStart() {
             const btnSumar = newProduct.querySelector('.btnSumar');
 
             btnSumar.addEventListener('click', (e) => {
-            addCart(producto);
                 const countElement = e.target.parentElement.getElementsByTagName("span")[0];
-                countElement.innerText = 2;
+                countElement.innerText = addCart(producto);
+                updateTotals();
             });
-
-            btnRestar.addEventListener('click', (e) => restarCart(producto));
+            btnRestar.addEventListener('click', (e) => {
+                const countElement = e.target.parentElement.getElementsByTagName("span")[0];
+                countElement.innerText = restarCart(producto);
+                updateTotals();
+            });
 
 
         });
@@ -40,3 +46,18 @@ function createProductStart() {
 
 
 createProductStart();
+updateTotals();
+
+function updateTotals(){
+    const productos = JSON.parse(localStorage.getItem("products"));
+    let unidades = 0;
+    let precio = 0;
+    if(productos && productos.length>0){
+        productos.forEach(producto => {
+            unidades += producto.cantidad;
+            precio += producto.precio * producto.cantidad;
+        })
+        unidadesElement.innerText = unidades;
+        priceElement.innerText = precio;
+    }
+}
