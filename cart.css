@@ -40,11 +40,6 @@
 }
 
 
-#totales{
-    text-align: center;
-}
-
-
 .btn{
     background-color: #804040;
     border: 2px solid #804040;
@@ -54,6 +49,30 @@
     color: #f9eaea;
 }
 
+#reboot{
+    background-color: #804040;
+    border: 2px solid #804040;
+    padding: 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: #f9eaea;
+}
+
+#totales, #cart-empty{
+    text-align: center;
+}
+
+#cart-empty{
+    margin-top: 70px;
+    font-family: 'quicksand';
+    font-weight: 700;
+    color: #804040;
+}
+
+#cart-empty a{
+    text-decoration: none;
+}
+
 #totales p{
     padding: 10px;
     color: #804040;
@@ -61,8 +80,7 @@
     font-weight: 800;
 }
 
-
-
 .cantidad{
     color: white;
 }
+

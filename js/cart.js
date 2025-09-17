@@ -1,7 +1,9 @@
 const containerCards = document.getElementById("product-container");
 const unidadesElement = document.getElementById("unidades");
 const priceElement = document.getElementById("precio");
-
+const cartEmpty = document.getElementById("cart-empty");
+const totalesElement = document.getElementById("totales");
+const rebootCarteElement = document.getElementById("reboot")
 
 
 function createProductStart() {
@@ -60,4 +62,21 @@ function updateTotals(){
         unidadesElement.innerText = unidades;
         priceElement.innerText = precio;
     }
+    checkMessage();
+}
+
+function checkMessage(){
+    const productos = JSON.parse(localStorage.getItem("products"));
+    cartEmpty.classList.toggle("escondido", productos && productos.length>0);
+    totalesElement.classList.toggle("escondido", !(productos && productos.length>0));
+}
+
+checkMessage()
+
+
+rebootCarteElement.addEventListener("click",rebootCart);
+function rebootCart(){
+ localStorage.removeItem("products");
+ updateTotals();
+ createProductStart();
 }
