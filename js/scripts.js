@@ -12,7 +12,7 @@ function createProductStart (productos) {
         <button class="btnSection">Comprar</button>
         `;
         containerCards.appendChild(newProduct);
-        newProduct.querySelector('.btnSection').addEventListener('click', () => addCart(producto))
+        newProduct.querySelector('.btnSection').addEventListener('click', () => addCart(producto));
     });
 }
 

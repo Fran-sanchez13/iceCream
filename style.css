@@ -203,25 +203,40 @@ nav a{
   padding: 40px;
   display: flex;
   justify-content: center; 
-  align-items: flex-start;
-  gap: 40px; 
+  gap: 20px; 
   flex-wrap: wrap; 
   background-color: var(--primary);
   padding-bottom: 15%;
 }
-.cartContainer {
-  background-color: var(--lettering);
+.cartContainerCake,
+.cartContainerSm,
+.cartContainerIce {
   border-radius: 1rem;
   padding: 20px;
-  width: 250px;
-  height: 300px;
+  width: 500px;
+  height: 650px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: 200ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.cartContainer:hover {
+.cartContainerCake:hover,
+.cartContainerSm:hover,
+.cartContainerIce:hover {
   translate: 0 -10px;
   box-shadow: 0 0px 12px rgb(26, 26, 26);
+}
+
+.cartContainerCake{
+  background-image: url(assets/img/fondo1.jpg);
+}
+.cartContainerSm{
+  background-image: url(assets/img/fondo2.jpg);
+}
+.cartContainerIce{
+  background-image: url(assets/img/fondo3.jpg);
 }
 
 #product-container{
@@ -257,8 +272,11 @@ nav a{
 }
 
 .title {
+  background-color: var(--primary);
+  border-radius: 8px;
+  padding: 5px;
   font-size: 24px;
-  color: var(--primary);
+  color: var(--lettering);
   margin-bottom: 10px;
   font-family: 'quicksand';
 }
@@ -281,12 +299,7 @@ nav a{
   color: var(--lettering);
 }
 
-.imgPortada {
-  display: block;
-  margin: 0 auto;
-  width: 150px;
-  height: 150px;
-}
+
 
 
 .imgCakes { 

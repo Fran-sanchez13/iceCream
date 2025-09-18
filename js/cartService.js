@@ -36,7 +36,6 @@ function restarCart(producto){
 
 }
 
-// toma el producto, le agrega 1 y lo devuelve
 function getNewProductMemory(producto){
     const nuevoProducto = producto;
     nuevoProducto.cantidad = 1;
