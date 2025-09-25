@@ -69,3 +69,8 @@
         height: 230px;
     }
 }
+
+@media (max-width: 480px){
+    header{
+    }
+}

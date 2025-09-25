@@ -68,13 +68,19 @@ nav a{
 
 /* ==========carrito=============== */
 .cartIcon{
+  display: inline-block;
+  position: relative;
+  z-index: 10;
   height: 30px;
   padding: 5px 10px;
   cursor: pointer;
   margin: 10px;
 }
 
-#cartToggle, #menu-toggle, .menu-label{
+#menu-toggle, .menu-label{
+  display: none;
+}
+#cartToggle{
   display: none;
 }
 
