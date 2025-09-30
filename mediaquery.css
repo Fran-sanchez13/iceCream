@@ -70,17 +70,15 @@
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 481px){
     header{
         justify-content: space-evenly;
     }
     .cartIcon{
-        background-color: green;
         z-index: 10;
     }
     .navList{
-        display: none;
+        width: 80%;
     }
     
-
 }
