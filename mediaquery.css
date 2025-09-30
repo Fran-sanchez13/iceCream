@@ -71,6 +71,8 @@
 }
 
 @media (max-width: 480px){
-    header{
+    .cartIcon{
+        background-color: green;
+        z-index: 10;
     }
 }
