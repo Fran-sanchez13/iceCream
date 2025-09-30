@@ -71,8 +71,16 @@
 }
 
 @media (max-width: 480px){
+    header{
+        justify-content: space-evenly;
+    }
     .cartIcon{
         background-color: green;
         z-index: 10;
     }
+    .navList{
+        display: none;
+    }
+    
+
 }
