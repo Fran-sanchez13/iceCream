@@ -36,20 +36,27 @@
       <form class="formContact">
         
         <div >
-          <p>Nombre</p>
-          <input type="text">
+          <input type="text" placeholder="Nombre" id="NombreInput">
+          <small class="nameError"></small>
           
-          <p>Apellido</p>
-          <input type="text">
+          <input type="text" placeholder="Apellido" id="ApellidoInput">
+          <small class="lastNameError"></small>
+
           
-          <p>Email</p>
-          <input type="email">
-          <p>Telefono</p>
-          <input type="number">
+          <input type="email" placeholder="Email" id="EmailInput">
+          <small class="emailError"></small>
+
+
+          <input type="number" placeholder="Telefono" 
+          id="TelefonoInput">
+          <small class="phoneError"></small>
+
+          
         </div>
+
+          <!-- <input type="submit" class="btnForm">  -->
+        <button class="btnContact">Enviar</button>
           
-       
-          <input type="submit" class="btnForm"> 
        
       </form>
 </section>
