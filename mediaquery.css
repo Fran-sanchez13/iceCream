@@ -97,7 +97,11 @@
     font-size: 15px;
     }
 
-    .btnSection{
+    .btnSection.btnRestar{
+        display: flex;
+        margin-bottom: 5px;
+    }
+    .btnSection.btnSumar{
         display: flex;
         margin-bottom: 5px;
     }
