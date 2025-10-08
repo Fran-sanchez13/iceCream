@@ -61,6 +61,11 @@ nav a{
   font-family: 'quicksand';
 }
 
+.register{
+  background-color: var(--back3);
+  padding: 5px;
+  border-radius: 0.5rem;
+}
 
 
 /* ==========MENU HAMBURGUESA=============== */
@@ -389,82 +394,104 @@ nav a{
 
 
 /* =====SECTION CONTACT===== */
+.btnContact{
+  padding: 5px;
+  border-radius: 0.3rem;
+  border: 2px solid var(--lettering);
+  background-color: white;
+  width: 85%;
+  font-family: 'quicksand';
+  color: var(--lettering);
+  font-weight: 600;
+}
 
 #contact{
-  margin-top: 70px;
-}
-
-#contact h2{
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 50px;
-color: var(--lettering);
-margin: 10px;
-padding: 20px;
-}
-
-
-.formContact{
-  height: 100%;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 80px;
 }
+/* ======SECTION REGISTER======== */
 
-.formContact p{
-  font-family: 'fredoka';
-  color: var(--secondary);
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.formContact input{
-  height: 30px;
-  border: 2px solid var(--secondary);
-  border-radius: 1rem;
-  padding: 20px;
-  color: var(--secondary);
-  font-family: 'fredoka';
-  font-weight: 600;
+#register{
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 80px;
+}
+
+.titleRegister{
+  background-color: var(--primary);
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 30px;
+  color: var(--lettering);
+  margin-bottom: 10px;
+  font-family: 'quicksand';
+}
+
+#formContact{
+  text-align: center;
+  background-color: #8040406e;
+  padding: 40px;
+  border-radius: 1rem;
+  border: 2px solid var(--lettering);
+}
+
+.formGroup{
+  padding: 5px;
   margin: 10px;
 }
 
-.formContact.error input{
-  border: 1px solid red;
-}
-
-.formContact small{
-  color: red;
-  max-width: 350px;
-  text-align: center;
-  display: none;
-}
-
-
-.btnContact{
+.formGroup input{
   background-color: white;
-  border-radius: 0.5rem;
   padding: 10px;
-  font-size: 12px;
-  color: #0D2D4D;
+  border-radius: 0.5rem;
+  border: 2px solid var(--lettering);
+  font-family: 'quicksand';
   font-weight: 800;
-  cursor: pointer;
-
 }
+
+.btnRegister{
+  padding: 5px;
+  border-radius: 0.3rem;
+  border: 2px solid var(--lettering);
+  background-color: white;
+  width: 85%;
+  font-family: 'quicksand';
+  color: var(--lettering);
+  font-weight: 600;
+}
+
+#sesion {
+  padding: 10px;
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'quicksand';
+}
+
+#sesion a{
+  text-decoration: none;
+  color: rgb(7, 81, 155);
+  font-size: 20px;
+  font-family: 'quicksand';
+}
+
+
 
 #footer{
-  height: 10%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--lettering);
   margin-top: 20px;
+  padding: 10px;
 }
 
 #footer p{
@@ -472,4 +499,5 @@ padding: 20px;
   font-family: 'fredoka';
   font-size: 20px;
 }
+
 

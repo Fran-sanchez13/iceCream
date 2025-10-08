@@ -30,38 +30,41 @@
               
 </header>
 <!-- SECTION -->
-<main>
-  <section id="contact">
-    <h2 class="title">Llena el formulario y te contactamos!</h2>
-      <form class="formContact">
-        
-        <div >
-          <input type="text" placeholder="Nombre" id="NombreInput">
-          <small class="nameError"></small>
-          
-          <input type="text" placeholder="Apellido" id="ApellidoInput">
-          <small class="lastNameError"></small>
-
-          
-          <input type="email" placeholder="Email" id="EmailInput">
-          <small class="emailError"></small>
-
-
-          <input type="number" placeholder="Telefono" 
-          id="TelefonoInput">
-          <small class="phoneError"></small>
-
-          
+ <main>
+    <section id="contact">
+      <h2 class="title">Llená el formulario y te contactamos!</h2>
+      
+      <form id="formContact">
+        <div class="formGroup">
+          <input type="text" placeholder="Nombre" id="nombreInput">
+          <small id="nameError"></small>
         </div>
 
-          <!-- <input type="submit" class="btnForm">  -->
-        <button class="btnContact">Enviar</button>
-          
-       
+        <div class="formGroup">
+          <input type="text" placeholder="Apellido" id="apellidoInput">
+          <small id="lastNameError"></small>
+        </div>
+
+        <div class="formGroup">
+          <input type="email" placeholder="Email" id="emailInput">
+          <small id="emailError"></small>
+        </div>
+
+        <div class="formGroup">
+          <input type="number" placeholder="Teléfono" id="telefonoInput">
+          <small id="phoneError"></small>
+        </div>
+
+        <button class="btnContact" type="submit">Enviar</button>
       </form>
-</section>
+    </section>
   </main>
+
+  <footer id="footer">
+    <p>Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/form.js"></script>
 </body>
 </html>
-        
         

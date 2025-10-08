@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutUs.html">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <title>Ice Cream World</title>
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <a href="index.html"><img src="assets/img/iceCream-logoT.png" alt="ice Cream World" class="iceLogo"></a>
+
+        <nav class="navBar">
+            <label for="menu-toggle" class="menu-label"><img src="assets/img/menu.png" alt="menu icon"></label>
+            <input type="checkbox" id="menu-toggle">
+            <ul class="navList">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="aboutUs.html">Nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li class="register"><a href="register.html">Resgistrarme</a></li>
+            </ul>
+        </nav>
+        <!-- CARRITO -->
+        <label for="cartToggle">
+            <a href="cart.html"><img src="assets/img/ordenar-comida (1).png" alt="Ordenar comida" class="cartIcon"></a>
+        </label>
+    </header>
+
+<main>
+    <section id="register">
+            <h2 class="titleRegister">Crea tu cuenta</h2>
+
+        <form id="formContact">
+            <div class="formGroup">
+                <input type="text" placeholder="Nombre" id="nombreInput">
+                <small></small>
+
+            </div>
+
+            <div class="formGroup">
+                <input type="text" placeholder="Apellido" id="apellidoInput">
+                <small></small>
+            </div>
+            
+            <div class="formGroup">
+                <input type="password" placeholder="Password" id="passwordInput">
+                <smal></small>
+            </div>
+            
+            <div class="formGroup">
+                <input type="email" placeholder="Email" id="emailInput">
+                <small></small>
+            </div>
+            
+            <div class="formGroup">
+                <input type="number" placeholder="Teléfono" id="telefonoInput">
+                <small></small>
+            </div>
+            
+            <button class="btnRegister" type="submit">Enviar</button>
+            <div id="sesion">
+                <p>¿Ya tenes cuenta? <a href="#">inicia Sesion</a></p>
+            </div>
+        </form>
+    </section>
+</main>
+
+    <footer id="footer">
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/form.js"></script>
+</body>
+
+</html>
+
