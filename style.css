@@ -299,7 +299,7 @@ nav a{
 }
 
 .title {
-  background-color: var(--primary);
+  text-align: center;
   border-radius: 8px;
   padding: 5px;
   font-size: 24px;

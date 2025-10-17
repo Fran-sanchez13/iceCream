@@ -19,9 +19,13 @@ function addCart(producto){
             count = newMemory[indexProduct].cantidad;
         }
             localStorage.setItem("products", JSON.stringify(newMemory));
+            updateCartNumber();
             return count;
     }
+            updateCartNumber();
+
 }
+
 
 function restarCart(producto){
     const memoria = JSON.parse(localStorage.getItem("products"));
@@ -41,3 +45,13 @@ function getNewProductMemory(producto){
     nuevoProducto.cantidad = 1;
     return nuevoProducto;
 }
+
+const cuentaCarritoElement = document.getElementById("cuentaCarrito");
+function updateCartNumber(){
+    const memoria = JSON.parse(localStorage.getItem("products"));
+    const cuenta = memoria.reduce((acum, current) => acum+current.cantidad,0 );
+    cuentaCarritoElement.innerText = cuenta;
+}
+
+updateCartNumber();
+
