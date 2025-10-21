@@ -299,6 +299,7 @@ nav a{
 }
 
 .title {
+  background-color: var(--primary);
   text-align: center;
   border-radius: 8px;
   padding: 5px;
@@ -426,74 +427,7 @@ nav a{
   margin-top: 20px;
   padding: 80px;
 }
-/* ======SECTION REGISTER======== */
 
-#register{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  padding: 80px;
-}
-
-.titleRegister{
-  background-color: var(--primary);
-  border-radius: 8px;
-  padding: 5px;
-  font-size: 30px;
-  color: var(--lettering);
-  margin-bottom: 10px;
-  font-family: 'quicksand';
-}
-
-#formContact{
-  text-align: center;
-  background-color: #8040406e;
-  padding: 40px;
-  border-radius: 1rem;
-  border: 2px solid var(--lettering);
-}
-
-.formGroup{
-  padding: 5px;
-  margin: 10px;
-}
-
-.formGroup input{
-  background-color: white;
-  padding: 10px;
-  border-radius: 0.5rem;
-  border: 2px solid var(--lettering);
-  font-family: 'quicksand';
-  font-weight: 800;
-}
-
-.btnRegister{
-  padding: 5px;
-  border-radius: 0.3rem;
-  border: 2px solid var(--lettering);
-  background-color: white;
-  width: 85%;
-  font-family: 'quicksand';
-  color: var(--lettering);
-  font-weight: 600;
-}
-
-#sesion {
-  padding: 10px;
-  color: var(--primary);
-  font-size: 20px;
-  font-weight: 700;
-  font-family: 'quicksand';
-}
-
-#sesion a{
-  text-decoration: none;
-  color: rgb(7, 81, 155);
-  font-size: 20px;
-  font-family: 'quicksand';
-}
 
 
 
