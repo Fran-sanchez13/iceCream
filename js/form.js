@@ -1,11 +1,41 @@
 const formRegister = document.getElementById("formRegister")
 const nameInput = document.getElementById("nombreInput")
 const lastNameInput = document.getElementById("apellidoInput")
+const emailInput = document.getElementById('emailInput')
+const paswordInput = document.getElementById('passwordInput')
+const phoneInput = document.getElementById('telefonoInput')
+
+const users = [
+    {
+        Nombre: 'nombre',
+        lastName: 'apellido',
+        Email: 'pepito@gmail.com',
+        Password: 'contraseñas',
+        Teléfono: 'telefono'
+    }
+]
+
+
 
 /*Funcioones Auxiliares */
 const isEmpty = (input) => {
     return !input.value.trim().length
 }
+
+const isBetween = (input, min, max) => {
+    return input.value.length >= min && input.value.length < max
+}
+
+const isEmailValid = (input) => {
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+
+    return regex.test(input.value.trim())
+}
+
+const isExistingEmail = (input) => {
+   return users.some((user) => user.Email === input.value.trim())
+}
+
 
 const showError = (input, message) => {
     const formGroup = input.parentElement
@@ -30,21 +60,48 @@ const showSuccess = (input) => {
 
 const chackTextInput = (input) => {
     let valid = false
-
+    const maxCharacter = 16
+    const minCharacter = 3
     if(isEmpty(input)){
-        showError(input, 'el campo es obligatorio')
+        showError(input, 'El campo es obligatorio')
         return
     }
 
-    if('si no esta entre'){
-        'mostrar error'
-        'retornamos'
+    if( !isBetween(input, minCharacter, maxCharacter)){
+        showError(input, `Este campo debe tener entre ${minCharacter} y ${maxCharacter} caracteres`)
+        return
     }
 
     showSuccess(input)
     valid = true
     return valid
 }
+
+const checkEmail = (input) => {
+    let valid = false
+
+    if(isEmpty(input)){
+        showError(input, 'El campo es obligatorio')
+        return
+    }
+
+
+    if(!isEmailValid(input)){
+        showError(input, 'Este email es invalido')
+        return
+    }
+
+    if(isExistingEmail(input)){
+        showError(input, 'Este email ya esta registrado')
+        return
+    }
+
+    showSuccess(input)
+    valid = true
+    return valid
+}
+
+
 
 /*Validacion general y almacenamiento de datos */
 const submitHandler = (e) => {
@@ -61,8 +118,8 @@ const submitHandler = (e) => {
 const init = () => {
     formRegister.addEventListener('submit', submitHandler)
     nameInput.addEventListener('input', () => chackTextInput(nameInput))
+    lastNameInput.addEventListener('input', () => chackTextInput(lastNameInput))
+    emailInput.addEventListener('input', () => checkEmail(emailInput))
 }
 
 init()
-
-'4401NUcba'
