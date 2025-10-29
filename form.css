@@ -71,7 +71,10 @@ input:focus{
 }
 
 
-#form__error{
+#form_error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: red;
     font-size: 1rem;
     margin: 8px 0px;
@@ -102,6 +105,7 @@ input:focus{
   font-size: 20px;
   color: var(--lettering);
   font-weight: 600;
+  cursor: pointer;
 }
 
 #formSesion{
@@ -111,6 +115,10 @@ input:focus{
   justify-content: center;
   margin-top: 20px;
   padding: 100px;
+}
+
+#formStartSesion{
+  text-align: center;
 }
 
 #sesion {
@@ -135,6 +143,7 @@ input:focus{
   color: var(--lettering);
   margin-bottom: 10px;
   font-family: 'quicksand';
+  text-align: center;
 }
 
 #footerSesion {

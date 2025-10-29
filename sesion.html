@@ -43,16 +43,15 @@
 <main>
     <section id="formSesion">
             <h2 class="titleSesion">Iniciá Sesíon</h2>
-            <form id="formRegister">
+            <form id="formStartSesion">
                 <div class="formGroup">
-                    <input type="email" placeholder="Email" id="emailInput">
-                    <small></small>
+                    <input type="email" placeholder="Email" id="email">
                 </div>
                 <div class="formGroup">
-                    <input type="password" placeholder="Password" id="passwordInput">
-                    <smal></small>
+                    <input type="password" placeholder="Password" id="password">
                 </div>         
-            <button class="btnSesion" type="submit">Enviar</button>
+                <small id="form_error"></small>
+            <button class="btnSesion" type="submit">Iniciar sesíon</button>
             <div id="sesion">
                 <p>¿No tenes cuenta? <a href="register.html">Resgistrarme</a></p>
             </div>
@@ -64,7 +63,7 @@
     <p>Todos los derechos reservados</p>
 </footer>
 
-<script src="js/form.js"></script>
+<script src="js/login.js"></script>
 </body>
 
 </html>
