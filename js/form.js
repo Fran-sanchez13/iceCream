@@ -4,7 +4,6 @@ const lastNameInput = document.getElementById("apellidoInput")
 const emailInput = document.getElementById('emailInput')
 const passwordInput = document.getElementById('passwordInput')
 const phoneInput = document.getElementById('telefonoInput')
-
 const users = JSON.parse(localStorage.getItem('users')) || []
 
 
@@ -141,7 +140,6 @@ const checkPhone = (input) => {
         showError(input, 'El campo solo debe tener 10 caracteres numericos')
         return
     }
-    //que tenga 10 caracteres
 
 
     showSuccess(input)
@@ -153,9 +151,7 @@ const checkPhone = (input) => {
 
 /*Validacion general y almacenamiento de datos */
 const submitHandler = (e) => {
-    //prevenimos comportamiento por defecto
     e.preventDefault()
-    //validar los inputs
     let isNameValid = checkTextInput(nameInput)
     let islastNameValid = checkTextInput(lastNameInput)
     let isEmailValid = checkEmail(emailInput)
@@ -170,7 +166,7 @@ const submitHandler = (e) => {
         isPhoneValid
 
     if(isValidForm){
-        //agregar al usuario
+        
         users.push({
             name: nameInput.value.trim(),
             lastName: lastNameInput.value.trim(),
@@ -178,11 +174,8 @@ const submitHandler = (e) => {
             email: emailInput.value.trim(),
             phone: phoneInput.value.trim()
         })
-        //guardar en el localStorage
         saveLocalStorage()
-        //informar al usuario(con un alert)
         alert('Te registraste con exito!!')
-        //redirigir al login
         window.location.href = 'sesion.html'
 
     }

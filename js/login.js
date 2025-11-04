@@ -5,6 +5,10 @@ const errorMessage = document.getElementById('form_error')
 
 const users = JSON.parse(localStorage.getItem('users')) || []
 
+const saveSessionStorage = (user) => {
+    sessionStorage.setItem('activeUser', JSON.stringify(user))
+}
+
 const isEmpty = (input) => {
     return !input.value.trim().length
 }
@@ -58,10 +62,8 @@ const loginHandler = (e) => {
     e.preventDefault()
     if(isValidACount()){
         const user = users.find((user) => user.email === emailInput.value.trim())
-        console.log(user);
-        
-        //guardar en el sesion storage
-        //redirigir al home
+        saveSessionStorage(user)
+        window.location.href = 'index.html'
 
     }
 
